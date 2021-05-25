@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">homework2.6</string>
+    <string name="inlet">Вход</string>
+    <string name="welcome">Добро пожаловать!</string>
+    <string name="circs">Выполните вход       или зарегистрируйтесь.</string>
+    <string name="Login">Введите ваш логин</string>
+    <string name="Password">Введите ваш пароль</string>
+    <string name="warning_fil_fields">Неправильный логин или пароль</string>
+    <string name="link"><a href="https://www.google.com/">регистрация</a></string>
+</resources>
