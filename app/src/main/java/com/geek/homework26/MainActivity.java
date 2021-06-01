@@ -41,8 +41,6 @@ public class MainActivity extends AppCompatActivity {
     public void onClickText(View view) {
         if (register != null) {
             // register.setMovementMethod(onClickText().getInstance());
-
-
         }
 
     }
