@@ -3,6 +3,7 @@ package com.geek.homework26;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -125,6 +126,8 @@ public class SecondActivity extends AppCompatActivity {
 
                     socr("/");
                     break;
+                case R.id.protsent_btn:
+                    socr("%");
                 case R.id.equal_btn:
                     secondNumber = Double.parseDouble(intermediateNumber);
                     switch (operation) {
@@ -146,6 +149,10 @@ public class SecondActivity extends AppCompatActivity {
                                 result = firstNumber / secondNumber;
                             }
                             break;
+                        case "%":
+                            Intent intent=new Intent(SecondActivity.this,info.class);
+                            intent.putExtra("name", panel.getText().toString());
+                            startActivity(intent);
                     }
 
                     if (!intermediateNumber.equals("Ошибка")) {
@@ -156,5 +163,8 @@ public class SecondActivity extends AppCompatActivity {
             }
         } catch (Exception ignored) {
         }
+
+
     }
+
 }
